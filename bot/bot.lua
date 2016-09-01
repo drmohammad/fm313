@@ -70,7 +70,7 @@ function msg_valid(msg)
     return false
   end
 
-  if msg.from.id == our_id then
+  if msg.from.id ==Mohammad_M_313  then
     print('\27[36mNot valid: Msg from our id\27[39m')
     return false
   end
@@ -99,7 +99,7 @@ function pre_process_service_msg(msg)
       if msg.out then
          msg.out = false
       end
-      if msg.from.id == our_id then
+      if msg.from.id == Mohammad_M_313 then
          msg.from.id = 0
       end
    end
@@ -235,8 +235,8 @@ function create_config( )
   print ('saved config into ./data/config.lua')
 end
 
-function on_our_id (id)
-  our_id = id
+function on_our_id (Mohammad_M_313)
+  our_id = Mohammad_M_313
 end
 
 function on_user_update (user, what)
